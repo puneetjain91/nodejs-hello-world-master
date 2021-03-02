@@ -1,0 +1,47 @@
+{
+  "extends": "airbnb-typescript/base",
+  "env": {
+    "node": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  },
+  "plugins": ["jest", "prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "import/prefer-default-export": "off",
+    "object-curly-newline": "off",
+    "no-console": "off",
+    "prefer-template": "off",
+    "operator-linebreak": "off",
+    "no-restricted-syntax": "off",
+    "implicit-arrow-linebreak": "off",
+    "comma-dangle": "off",
+    "@typescript-eslint/indent": "off",
+    "arrow-parens": "off",
+    "function-paren-newline": "off",
+    "no-restricted-globals": "off",
+    "consistent-return": "off",
+    "no-confusing-arrow": "off"
+  },
+  "overrides": [
+    {
+      "files": ["src/**/*.test.ts"],
+      "env": {
+        "jest": true
+      },
+      "extends": ["plugin:jest/recommended"],
+      "rules": {
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error"
+      }
+    }
+  ]
+}
