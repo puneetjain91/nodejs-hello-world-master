@@ -32,7 +32,7 @@ jobs:
       run: npm install
     - name: npm build
       id: npm_build
-      run: npm run build --if-present
+      run: npm run build
     - run: npm run lint
     - name: npm test
       id: npm_test
