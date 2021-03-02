@@ -8,7 +8,6 @@
   "license": "ISC",
   "main": "server.ts",
   "scripts": {
-    "build": "tsc",
     "test": "tsc --noEmit && jest",
     "start": "node dist/server.js",
     "dev": "cross-env NODE_ENV=development NODE_PATH=src nodemon | bunyan",
